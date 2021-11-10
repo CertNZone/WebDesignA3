@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Steam Deck</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="locomotive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.60/dist/themes/light.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Steam Deck</h1>
+    </nav>
+
+    <div class="smallMenu">
+        <sl-button type="primary" outline pill>Menu</sl-button>
+    </div>
+
+    <!-- The manu to change the displayed content -->
+    <div class="menu">
+        <sl-button class="overviewBtn" type="primary" outline>Overview</sl-button>
+        <sl-button class="hardwareBtn" type="primary" outline>Hardware</sl-button>
+        <sl-button class="specsBtn" type="primary" outline>Specs</sl-button>
+        <sl-button class="softwareBtn" type="primary" outline>Software</sl-button>
+        <sl-button class="galleryBtn" type="primary" outline>Gallery</sl-button>
+    </div>
+
+    <!-- Div to allow better page manipulation -->
+    <div class="content">
+        <!-- Overview swiper -->
+        <div class="swiper overviewSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="section">
+                        <h2>The Most gaming Power You've Ever Held</h2>
+                        <p>Introducing the new Steam Deck, starting at $399USD. Shipping begins in December 2021. Go
+                            <a href="https://store.steampowered.com/steamdeck">HERE</a> to reserve yours*.
+                        </p>
+                        <sl-responsive-media>
+                            <video
+                            src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/hero-banner-sequence-english.mp4?v=2"
+                            preload autoplay loop></video>
+                        </sl-responsive-media>
+                    </div>
+
+                    <div class="section">
+                        <h2>All-In-One portable PC gaming</h2>
+                    </div>
+
+                    <div class="section">
+
+                        <p>Steam Deck brings the Steam games and features you love to a powerful and convenient form
+                            factor that you can take wherever you go.</p>
+                        <h2>Your steam library is already on your deck.</h2>
+                        <p>Just power it on and log in.</p>
+                        <p>Your games and friends are already there.</p>
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/overview-shared-library-english.jpg"
+                            alt="overview-shared-library-english">
+                        </sl-responsive-media>
+                    </div>
+                    <div class="section">
+                        <h2>Three storage configuration options.</h2>
+                        <div class="row">
+                            <div class="col3rd">
+                                <h3>$399 USD 64GB</h3>
+                                <ul>
+                                    <li>64GB eMMC storage</li>
+                                    <li>Carrying case</li>
+                                </ul>
+                            </div>
+                            <div class="col3rd">
+                                <h3>$529 USD 256GB</h3>
+                                <ul>
+                                    <li>256GB NVMe SSD internal storage</li>
+                                    <li>Faster storage</li>
+                                    <li>Carrying case</li>
+                                    <li>Exclusive steam community profile bundle</li>
+                                </ul>
+                            </div>
+                            <div class="col3rd">
+                                <h3>$649 USD 512GB</h3>
+                                <ul>
+                                    <li>512GB NVMe SSD internal storage</li>
+                                    <li>Fastest storage</li>
+                                    <li>Premium anti-glare etched glass</li>
+                                    <li>Exclusive carrying case</li>
+                                    <li>Exclusive steam community profile bundle</li>
+                                    <li>Exclusive virtual keyboard theme</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hardware swiper -->
+        <div class="swiper hardwareSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="section">
+                        <h2>Steam Deck™ is the most powerful, full-featured gaming handheld in the world.</h2>
+                        <p>We partnered with AMD to create Steam Deck's custom APU, optimized for handheld gaming.
+                            It is
+                            a Zen 2 + RDNA 2 powerhouse, delivering more than enough performance to run the latest
+                            AAA
+                            games in a very efficient power envelope.</p>
+                    </div>
+
+                    <div class="section">
+                        <div class="row">
+                            <div class="col2">
+                                <h2>Comfort</h2>
+                                <sl-responsive-media>
+                                    <video src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/rcc-hero.mp4"
+                                    preload autoplay loop></video>
+                                </sl-responsive-media>
+                                <p>The Steam deck was built for extended play sessions - whether you're using
+                                    thumbsticks or
+                                    trackpads - with full size controls positioned within your reach. The rear of
+                                    the
+                                    device is
+                                    sculpted to comfortably fit a wide range of hand sizes. </p>
+                            </div>
+                            <div class="col2">
+                                <h2>Thumbsticks</h2>
+                                <sl-responsive-media>
+                                    <video
+                                    src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/rcc-thumbstick.mp4"
+                                    preload autoplay loop></video>
+                                </sl-responsive-media>
+                                <p>Best-in-class thumbsticks - with capacitive touch sesnors built-in - provide a
+                                    level
+                                    of
+                                    precision and comfort not found in other prtoable gaming devices.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col2">
+                                <h2>Triggers</h2>
+                                <sl-responsive-media>
+                                    <video
+                                    src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/rcc-trigger.mp4"
+                                    preload autoplay loop>Your browser does not support video playback.</video>
+                                </sl-responsive-media>
+                                <p>Analog triggers provide a full range of input for the best experience -
+                                    especially in
+                                    driving
+                                    games.</p>
+                            </div>
+                            <div class="col2">
+                                <h2>Grip Buttons</h2>
+                                <sl-responsive-media>
+                                    <video src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/rcc-back.mp4"
+                                    preload autoplay loop>Your browser does not support video playback.</video>
+                                </sl-responsive-media>
+                                <p>Four user-assigned buttons on the back of the Deck put the next level of control right at your fingertips while keeping your thumb firmly planted on the thumbsticks or trackpads.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="row">
+                            <div class="col3rd">
+                                <sl-responsive-media>
+                                    <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/hardware-touchscreen.jpg"
+                                    alt="hardware-touchscreen">
+                                </sl-responsive-media>
+                                <h3>7" Touchscreen</h3>
+                                <p>Type and swipe through the Steam UI with the Deck's capacitive multi-touch
+                                    display.
+                                </p>
+                            </div>
+                            <div class="col3rd">
+                                <sl-responsive-media>
+                                    <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/hardware-trackpads.jpg"
+                                    alt="hardware-trackpads">
+                                </sl-responsive-media>
+                                <h3>Trackpads</h3>
+                                <p>Play PC games that were never designed to be handheld. With increased precision and customizability, trackpads also give you a competitive edge when playing fast paced FPS games.</p>
+                            </div>
+                            <div class="col3rd">
+                                <sl-responsive-media>
+                                    <video src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/gyro.mp4"
+                                    preload autoplay loop>Your browser does not support video playback.</video>
+                                </sl-responsive-media>
+                                <sl-tooltip content="Gyroscope" placement="top-end">
+                                    <h3>Gyro</h3>
+                                </sl-tooltip>
+                                <p>With an IMU and capacitive touch thumbsticks on-board, Deck helps you aim better. By physically  positioning the device you can achieve more precision than using a thumbstick or trackpad alone.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Everything you need.</h2>
+                        <div class="row">
+                            <div class="col3rd">
+                                <h3>Fast Storage</h3>
+                                <p>Get the built-in storage you need: 64GB eMMC, 256GB NVMe SSD (faster), or 512GB NVMe SSD (fastest). If you're looking for more space, augment your built-in storage with a microSD card and fill it up with even more games.</p>
+                            </div>
+                            <div class="col3rd">
+                                <h3>Hi-Fi Audio</h3>
+                                <p>Steam Deck's stereo speakers pack a punch. An embedded DSP provides clarity and a wide soundstage for an immersive listening experience. Connect your favorite headset, or use the onboard dual microphones to chat with your friends.</p>
+                            </div>
+                            <div class="col3rd">
+                                <h3>40Wh Battery</h3>
+                                <p>Steam Deck's onboard 40 watt-hour battery provides several hours of play time for most games. For lighter use cases like game streaming, smaller 2D games, or web browsing, you can expect to get the maximum battery life of approximately 7-8 hours.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col3rd">
+                                <h3>Expandable I/O</h3>
+                                <p>The single USB-C jack is multi-purpose: used for charging, peripherals, or even throwing the game onto a big screen at the same time. Any USB-C hub can be used to expand your options, or get our official dock when it is released. More info on the dock below.</p>
+                            </div>
+                            <div class="col3rd">
+                                <h3>Wireless</h3>
+                                <p>WiFi keeps you connected to the world, and Bluetooth allows for a wide variety of wireless peripherals - from controllers to headsets, keyboards, and mice.</p>
+                            </div>
+                            <div class="col3rd">
+                                <h3>Fast Suspend / Resume</h3>
+                                <p>We’ve built a quick suspend / resume feature into SteamOS. Press the power button, and Steam Deck will suspend your game and go into sleep mode. Push the power button again and it will wake up right where you left off.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                                <h2>Expand your library with a microSD card.</h2>
+                                <p>All models of Steam Deck support expanding your storage via microSD cards. Games stored on a microSD card will appear in your library instantly.</p>
+                            <sl-responsive-media>
+                                <video
+                                src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/microSDcard-library-animation.mp4"
+                                preload autoplay loop>Your browser does not support video playback.</video>
+                            </sl-responsive-media>
+                    </div>
+
+                    <div class="section">
+                        <h2>Use your Deck as a PC because it is one.</h2>
+                        <sl-responsive-media>
+                            <video src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/crusader-kings.mp4"
+                            preload autoplay loop>Your browser does not support video playback.</video>
+                        </sl-responsive-media>
+                        <p>You can also install and use PC software, of course. Browse the web, watch streaming video, do your normal productivity stuff, install some other game stores, whatever.</p>
+                    </div>
+
+                    <div class="section">
+                        <h3>Plays nice with all your accessories</h3>
+                        <p>Steam Deck is Bluetooth-ready, and its USB-C port can handle all sorts of I/O. Want to have a fighting tournament on the go? Covered. Want to play with Bluetooth mouse and keyboard? Covered. Want to pair your favorite Bluetooth headphones? You're good to go.</p>
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/hardware-accssories.jpg"
+                            alt="hardware-accssories" class="imgSmall">
+                        </sl-responsive-media>
+                        <h3>Deck can be plugged in to your TV</h3>
+                        <p>Deck can be plugged in to your TV, monitor, or even your old CRT if you have the right cables. When docked, the Steam Deck’s USB-C port can  carry video, audio, input, etc. Just plug in your peripherals, or use the official dock, and you’re ready to go.</p>
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/hardware-tv-alt.jpg"
+                            alt="hardware-tv-alt" class="imgSmall">
+                        </sl-responsive-media>
+
+                            <sl-responsive-media>
+                                <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/hardware-dock.png"
+                                alt="hardware-dock">
+                            </sl-responsive-media>
+                                <h3>There’s a dock, too.</h3>
+                                <p>The official dock props up your Steam Deck while connecting to external displays, wired networking, USB peripherals, and power. You  can also use a powered USB-C hub, if you've got one lying around. <br> 
+                                The official dock will be sold separately. More information coming soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specs swiper -->
+        <div class="swiper specsSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="section">
+                        <h2>Tech Specs</h2>
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/tech-specs/tech-specs_1_english.png?v=2"
+                            alt="tech-specs_1_english">
+                        </sl-responsive-media>
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/tech-specs/tech-specs_2_english.png"
+                            alt="tech-specs_2_english">
+                        </sl-responsive-media>
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/tech-specs/tech-specs_3_english.png"
+                            alt="tech-specs_3_english">
+                        </sl-responsive-media>
+                    </div>
+
+                    <div class="section">
+                        <h2>Speeds and Feeds</h2>
+                        <h3>Compute</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Processor</th>
+                                    <td> <sl-tooltip content="Accelerated Processing Unit" placement="top-end">AMD APU</sl-tooltip> <br>
+                                        <sl-tooltip content="Central Processing Unit" placement="top-end">
+                                            CPU:
+                                        </sl-tooltip> Zen 2 4c/8t, 2.4-3.5GHz (up to 448 GFlops FP32) <br>
+                                        <sl-tooltip content="Graphics Processing Unit">GPU:</sl-tooltip> 8 RDNA 2 CUs, 1.0-1.6GHz (up to 1.6 TFlops FP32) <br>
+                                        APU power: 4-15W
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><sl-tooltip content="Random Access Memory" placement="top-end">RAM</sl-tooltip></th>
+                                    <td>16 GB LPDDR5 on-board RAM (5500 MT/s quad 32-bit channels)</td>
+                                </tr>
+                                <tr>
+                                    <th>Storage</th>
+                                    <td>64 GB eMMC (PCIe Gen 2 x1) <br>
+                                        256 GB NVMe SSD (PCIe Gen 3 x4) <br>
+                                        512 GB high-speed NVMe SSD (PCIe Gen 3 x4) <br>
+                                        <br>
+                                        <em>All models use socketed 2230 m.2 modules (not intended for end-user
+                                            replacement) <br>
+                                            All models include high-speed microSD card slot</em>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Controls and Input</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Gamepad controls</th>
+                                    <td>
+                                        A B X Y buttons <br>
+                                        D-pad <br>
+                                        L & R analog triggers <br>
+                                        L & R bumpers <br>
+                                        View & Menu buttons <br>
+                                        4 x assignable grip buttons
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Thumbsticks</th>
+                                    <td>2 x full-size analog sticks with capacitive touch</td>
+                                </tr>
+                                <tr>
+                                    <th>Haptics</th>
+                                    <td>HD haptics</td>
+                                </tr>
+                                <tr>
+                                    <th>Trackpads</th>
+                                    <td>
+                                        2 x 32.5mm square trackpads with haptic feedback <br>
+                                        55% better latency compared to Steam Controller <br>
+                                        Pressure-sensitivity for configurable click strength
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><sl-tooltip content="Gyroscope" placement="top-end">Gyro</sl-tooltip></th>
+                                    <td>6-Axis IMU</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Display</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Resolution</th>
+                                    <td>1280 x 800px (16:10 aspect ratio)</td>
+                                </tr>
+                                <tr>
+                                    <th>Type</th>
+                                    <td>Optically bonded IPS LCD for enhanced readability</td>
+                                </tr>
+                                <tr>
+                                    <th>Display size</th>
+                                    <td>7" diagonal</td>
+                                </tr>
+                                <tr>
+                                    <th>Brightness</th>
+                                    <td>400 nits typical</td>
+                                </tr>
+                                <tr>
+                                    <th>Refresh rate</th>
+                                    <td>60Hz</td>
+                                </tr>
+                                <tr>
+                                    <th>Touch enabled</th>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <th>Sensors</th>
+                                    <td>Ambient light sensor</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Connectivity</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Bluetooth</th>
+                                    <td>Bluetooth 5.0 (support for controllers, accessories and audio)</td>
+                                </tr>
+                                <tr>
+                                    <th>Wi-Fi</th>
+                                    <td>Dual-band Wi-Fi radio, 2.4GHz and 5GHz, 2 x 2 MIMO, IEEE 802.11a/b/g/n/ac</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Audio</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Channels</th>
+                                    <td>Stereo with embedded DSP for an immersive listening experience</td>
+                                </tr>
+                                <tr>
+                                    <th>Microphones</th>
+                                    <td>Dual microphone array</td>
+                                </tr>
+                                <tr>
+                                    <th>Headphone / mic jack</th>
+                                    <td>3.5mm stereo headphone / headset jack</td>
+                                </tr>
+                                <tr>
+                                    <th>Digital</th>
+                                    <td>Multichannel audio via DisplayPort over USB-C, standard USB-C, or Bluetooth 5.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Power</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Input</th>
+                                    <td>45W USB Type-C PD3.0 power supply</td>
+                                </tr>
+                                <tr>
+                                    <th>Battery</th>
+                                    <td>40Whr battery. 2 - 8 hours of gameplay</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Expansion</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>MicroSD</th>
+                                    <td>UHS-I supports SD, SDXC and SDHC</td>
+                                </tr>
+                                <tr>
+                                    <th>External connectivity for controllers & displays</th>
+                                    <td>USB-C with DisplayPort 1.4 Alt-mode support; up to 8K @60Hz or 4K @120Hz, USB 3.2 Gen 2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Size and weight</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Size</th>
+                                    <td>298mm x 117mm x 49mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Weight</th>
+                                    <td>Approx. 669 grams</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Software</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Operating system</th>
+                                    <td>SteamOS 3.0 (Arch-based)</td>
+                                </tr>
+                                <tr>
+                                    <th>Desktop environment</th>
+                                    <td>KDE Plasma</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="section">
+                        <h2>Official dock</h2>
+                        <p>Sold separately. Specifications subject to change.</p>
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/tech-specs/tech-specs_dock_english.png?v=2"
+                            alt="tech-specs_dock_english">
+                        </sl-responsive-media>
+
+                        <h3>Expansion</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Peripherals</th>
+                                    <td>
+                                        1 x USB-A 3.1 Port <br>
+                                        2 x USB-A 2.0 Ports
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Networking</th>
+                                    <td>Ethernet</td>
+                                </tr>
+                                <tr>
+                                    <th>External Displays</th>
+                                    <td>
+                                        DisplayPort 1.4 <br>
+                                        HDMI 2.0
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Power</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Input</th>
+                                    <td>USB-C Power Delivery passthrough input</td>
+                                </tr>
+                                <tr>
+                                    <th>Deck connection</th>
+                                    <td>6" USB-C captive cable with low profile 90° connector</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Size and weight</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Size</th>
+                                    <td>117mm x 29mm x 50.5mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Weight</th>
+                                    <td>Approx. 120 grams</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Software Swiper -->
+        <div class="swiper softwareSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="section">
+                                <h2>Welcome to your new home.</h2>
+                                <p>The all-new home screen is everything you love about Steam in one place.</p>
+                                <p>Home is where you’ll find all the things you need—dive back into a game whether you were playing it on Steam Deck™ or your PC, see  what’s new in your library and the store, as well as what your friends are up to.</p>
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/software/software-deck-home-ui-english.jpg"
+                                alt="software-deck-home-ui-english" class="imgSmall">
+                        </sl-responsive-media>
+                    </div>
+
+                    <div class="section">
+                        <h2>All the Steam features you'd expect</h2>
+
+                        <div class="row">
+                            <div class="col3rd">
+                                <h3>Steam Chat</h3>
+                                <p>Your friends are all here—access Steam Chat at the push of a button.</p>
+                            </div>
+                            <div class="col3rd">
+                                <h3>Notifications</h3>
+                                <p>All notifications are now in one place, so you can check-in without leaving your game.</p>
+                            </div>
+                            <div>
+                                <h3>Cloud saves</h3>
+                                <p>Start playing on a PC and pick up right where you left off on Deck or vice versa.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col3rd">
+                                <h3>Remote play</h3>
+                                <p>Stream games from your home PC directly to your Deck no matter where you are.</p>
+                            </div>
+                            <div class="col3rd">
+                                <h3>Store</h3>
+                                <p>The entire Steam Store experience is accessible from Deck.</p>
+                            </div>
+                            <div class="col3rd">
+                                <h3>Community</h3>
+                                <p>Keep up to date with friends, news, and all the latest activity from Steam.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="row">
+                            <div class="col3rd">
+                                <h3>Steam just works on deck</h3>
+                                <p>No matter how you prefer to interact with Steam Deck -thumbsticks, trackpad, touchscreen, or mouse and keyboard - it just works.</p>
+                            </div>
+                            <div class="col3rd">
+                                <h3>You won't need directions.</h3>
+                                <p>Pull up the main menu with a press of the Steam button to access the Library, Store, Community, etc.</p>
+                            </div>
+                            <div class="col3rd">
+                                <h3>Important stuff is always available.</h3>
+                                <p>The Quick Access menu is your dedicated source for notifications, friends, peripherals, and important settings.</p>
+                                <p>Check your notifications, see what time it is, and message friends without leaving your game.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col3rd">
+                                <h3>Find what you've been looking for.</h3>
+                                <p>Universal Search pulls together results from your library, your friends list, and even the steam store. Just tap on search and get  typing using the all new virtual keyboard.</p>
+                            </div>
+                            <div class="col3rd">
+                                <h3>Keep your head in the game!</h3>
+                                <p>The Steam Overlay has been overhauled to give you access to more Steam features while your game is running.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>A new Steam operating system</h2>
+                        <p>On Steam Deck, your games run on a different operating system than the one on your desktop PC. It's a new version of SteamOS, built with  Steam Deck in mind and optimized for a handheld gaming experience. It comes with Proton, a compatibility layer that makes it possible to run  your games without any porting work needed from developers. For Deck, we're vastly improving Proton's game compatibility and support for  anti-cheat solutions by working directly with the vendors. “Hold on to your butts!”</p>
+
+                        <h3>It’s a Linux system, you know this!</h3>
+                        <p>The new version of SteamOS is optimized for handheld gaming, and it won't get in your way with other stuff. But if you want to get your hands dirty, head on out to the desktop.</p>
+
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/fauxrassic-park.jpg"
+                                    alt="fauxrassic-park">
+                        </sl-responsive-media>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery swiper -->
+            <div class="swiper gallerySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/overview-shared-library-english.jpg" alt="overview-shared-library-english">
+                        </sl-responsive-media>
+                    </div>
+                    <div class="swiper-slide">
+                        <sl-responsive-media>
+                            <video src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/ui-animation-control-english.mp4" preload loop autoplay>Your browser does not support video playback.</video>
+                        </sl-responsive-media>
+                    </div>
+                    <div class="swiper-slide">
+                        <sl-responsive-media>
+                            <video src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/rcc-hero.mp4" preload loop autoplay>Your browser does not support video playback.</video>
+                        </sl-responsive-media>
+                    </div>
+                    <div class="swiper-slide">
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/fauxrassic-park.jpg" alt="">
+                        </sl-responsive-media>
+                    </div>
+                    <div class="swiper-slide">
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/hardware-accssories.jpg" alt="">
+                        </sl-responsive-media>
+                    </div>
+                    <div class="swiper-slide">
+                        <sl-responsive-media>
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/factorio-cover.jpg" alt="">
+                        </sl-responsive-media>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+    </div>
+
+    <div class="loading">
+        
+<svg id="ebnPcCuxzVY1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 768" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><g id="ebnPcCuxzVY2"><g id="ebnPcCuxzVY3"><rect id="ebnPcCuxzVY4" width="1366" height="768" rx="0" ry="0" fill="rgb(38,139,178)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY5" transform="matrix(1 0 0 1 0 313.3)" opacity="0"><g id="ebnPcCuxzVY6"><rect id="ebnPcCuxzVY7" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 244.5 678.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY8" d="M393,679L393,777L245,777L245,679L393,679M394,678L244,678L244,778L394,778L394,678L394,678Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY9"><rect id="ebnPcCuxzVY10" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 187.5 536.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY11" d="M336,537L336,635L188,635L188,537L336,537M337,536L187,536L187,636L337,636L337,536L337,536Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY12"><rect id="ebnPcCuxzVY13" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 865.5 420.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY14" d="M1014,421L1014,519L866,519L866,421L1014,421M1015,420L865,420L865,520L1015,520L1015,420L1015,420Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY15"><rect id="ebnPcCuxzVY16" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 897.5 571.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY17" d="M1046,572L1046,670L898,670L898,572L1046,572M1047,571L897,571L897,671L1047,671L1047,571L1047,571Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g></g><g id="ebnPcCuxzVY18" transform="matrix(1 0 0 1 0 339.654617)" opacity="0"><g id="ebnPcCuxzVY19"><rect id="ebnPcCuxzVY20" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 579.5 394.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY21" d="M728,395L728,493L580,493L580,395L728,395M729,394L579,394L579,494L729,494L729,394L729,394Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY22"><rect id="ebnPcCuxzVY23" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 334.5 373.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY24" d="M483,374L483,472L335,472L335,374L483,374M484,373L334,373L334,473L484,473L484,373L484,373Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY25"><rect id="ebnPcCuxzVY26" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 306.5 600.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY27" d="M455,601L455,699L307,699L307,601L455,601M456,600L306,600L306,700L456,700L456,600L456,600Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY28"><rect id="ebnPcCuxzVY29" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 663.5 455.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY30" d="M812,456L812,554L664,554L664,456L812,456M813,455L663,455L663,555L813,555L813,455L813,455Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY31"><rect id="ebnPcCuxzVY32" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 1034.5 668.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY33" d="M1183,669L1183,767L1035,767L1035,669L1183,669M1184,668L1034,668L1034,768L1184,768L1184,668L1184,668Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g></g><g id="ebnPcCuxzVY34" transform="matrix(1 0 0 1 0 282.154617)" opacity="0"><g id="ebnPcCuxzVY35"><rect id="ebnPcCuxzVY36" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 417.5 263.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY37" d="M566,264L566,362L418,362L418,264L566,264M567,263L417,263L417,363L567,363L567,263L567,263Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY38"><rect id="ebnPcCuxzVY39" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 429.5 528.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY40" d="M578,529L578,627L430,627L430,529L578,529M579,528L429,528L429,628L579,628L579,528L579,528Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY41"><rect id="ebnPcCuxzVY42" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 514.5 646.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY43" d="M663,647L663,745L515,745L515,647L663,647M664,646L514,646L514,746L664,746L664,646L664,646Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY44"><rect id="ebnPcCuxzVY45" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 1224.5 678.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY46" d="M1373,679L1373,777L1225,777L1225,679L1373,679M1374,678L1224,678L1224,778L1374,778L1374,678L1374,678Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY47"><rect id="ebnPcCuxzVY48" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 992.5 515.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY49" d="M1141,516L1141,614L993,614L993,516L1141,516M1142,515L992,515L992,615L1142,615L1142,515L1142,515Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY50"><rect id="ebnPcCuxzVY51" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 37.5 313.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY52" d="M186,314L186,412L38,412L38,314L186,314M187,313L37,313L37,413L187,413L187,313L187,313Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g></g><g id="ebnPcCuxzVY53" transform="matrix(1 0 0 1 0 459.885826)" opacity="0"><g id="ebnPcCuxzVY54"><rect id="ebnPcCuxzVY55" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 0.5 668.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY56" d="M149,669L149,767L1,767L1,669L149,669M150,668L0,668L0,768L150,768L150,668L150,668Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY57"><rect id="ebnPcCuxzVY58" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 719.5 330.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY59" d="M868,331L868,429L720,429L720,331L868,331M869,330L719,330L719,430L869,430L869,330L869,330Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY60"><rect id="ebnPcCuxzVY61" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 442.5 447.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY62" d="M591,448L591,546L443,546L443,448L591,448M592,447L442,447L442,547L592,547L592,447L592,447Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY63"><rect id="ebnPcCuxzVY64" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 765.5 618.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY65" d="M914,619L914,717L766,717L766,619L914,619M915,618L765,618L765,718L915,718L915,618L915,618Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY66"><rect id="ebnPcCuxzVY67" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 897.5 696.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY68" d="M1046,697L1046,795L898,795L898,697L1046,697M1047,696L897,696L897,796L1047,796L1047,696L1047,696Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY69"><rect id="ebnPcCuxzVY70" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 276.5 29.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY71" d="M425,30L425,128L277,128L277,30L425,30M426,29L276,29L276,129L426,129L426,29L426,29Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g></g><g id="ebnPcCuxzVY72" transform="matrix(1 0 0 1 0 445.893356)" opacity="0"><g id="ebnPcCuxzVY73"><rect id="ebnPcCuxzVY74" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 126.5 628.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY75" d="M275,629L275,727L127,727L127,629L275,629M276,628L126,628L126,728L276,728L276,628L276,628Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY76"><rect id="ebnPcCuxzVY77" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 259.5 444.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY78" d="M408,445L408,543L260,543L260,445L408,445M409,444L259,444L259,544L409,544L409,444L409,444Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY79"><rect id="ebnPcCuxzVY80" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 623.5 568.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY81" d="M772,569L772,667L624,667L624,569L772,569M773,568L623,568L623,668L773,668L773,568L773,568Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY82"><rect id="ebnPcCuxzVY83" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 628.5 277.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY84" d="M777,278L777,376L629,376L629,278L777,278M778,277L628,277L628,377L778,377L778,277L778,277Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY85"><rect id="ebnPcCuxzVY86" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 1117.5 600.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY87" d="M1266,601L1266,699L1118,699L1118,601L1266,601M1267,600L1117,600L1117,700L1267,700L1267,600L1267,600Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY88"><rect id="ebnPcCuxzVY89" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 1121.5 36.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY90" d="M1270,37L1270,135L1122,135L1122,37L1270,37M1271,36L1121,36L1121,136L1271,136L1271,36L1271,36Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g></g><g id="ebnPcCuxzVY91" transform="matrix(1 0 0 1 0 377.5)" opacity="0"><g id="ebnPcCuxzVY92"><rect id="ebnPcCuxzVY93" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 1079.5 362.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY94" d="M1228,363L1228,461L1080,461L1080,363L1228,363M1229,362L1079,362L1079,462L1229,462L1229,362L1229,362Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY95"><rect id="ebnPcCuxzVY96" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 688.5 705.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY97" d="M837,706L837,804L689,804L689,706L837,706M838,705L688,705L688,805L838,805L838,705L838,705Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY98"><rect id="ebnPcCuxzVY99" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 120.5 237.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY100" d="M269,238L269,336L121,336L121,238L269,238M270,237L120,237L120,337L270,337L270,237L270,237Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY101"><rect id="ebnPcCuxzVY102" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 790.5 500.5)" fill="rgb(180,223,247)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY103" d="M939,501L939,599L791,599L791,501L939,501M940,500L790,500L790,600L940,600L940,500L940,500Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g><g id="ebnPcCuxzVY104"><rect id="ebnPcCuxzVY105" width="149" height="99" rx="0" ry="0" transform="matrix(1 0 0 1 409.5 668.5)" fill="rgb(20,196,249)" stroke="none" stroke-width="1"/><path id="ebnPcCuxzVY106" d="M558,669L558,767L410,767L410,669L558,669M559,668L409,668L409,768L559,768L559,668L559,668Z" fill="rgb(9,29,61)" stroke="none" stroke-width="1"/></g></g></g><g id="ebnPcCuxzVY107" opacity="0"><rect id="ebnPcCuxzVY108" width="480.56" height="75.66" rx="0" ry="0" transform="matrix(1 0 0 1 442.44 229.34)" fill="none" stroke="none" stroke-width="1"/><text id="ebnPcCuxzVY109" dx="0" dy="0" font-family="&quot;Oswald&quot;" font-size="96" transform="matrix(1 0 0 1 414.40625 251.546875)" fill="rgb(180,223,247)" stroke="rgb(9,29,61)" stroke-width="3" stroke-miterlimit="10"><tspan id="ebnPcCuxzVY110" x="0" y="0" font-family="Oswald" font-size="124" fill="rgb(28,73,107)" stroke="none" stroke-width="0"><![CDATA[Steam Deck]]></tspan></text></g><script><![CDATA[!function(t,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n(require("vue")):"function"==typeof define&&define.amd?define(["vue"],n):((t="undefined"!=typeof globalThis?globalThis:t||self).__SVGATOR_PLAYER__=t.__SVGATOR_PLAYER__||{},t.__SVGATOR_PLAYER__["5c7f360c"]=n())}(this,(function(){"use strict";function t(t,n){var r=Object.keys(t);if(Object.getOwnPropertySymbols){var e=Object.getOwnPropertySymbols(t);n&&(e=e.filter((function(n){return Object.getOwnPropertyDescriptor(t,n).enumerable}))),r.push.apply(r,e)}return r}function n(n){for(var r=1;r<arguments.length;r++){var e=null!=arguments[r]?arguments[r]:{};r%2?t(Object(e),!0).forEach((function(t){u(n,t,e[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(n,Object.getOwnPropertyDescriptors(e)):t(Object(e)).forEach((function(t){Object.defineProperty(n,t,Object.getOwnPropertyDescriptor(e,t))}))}return n}function r(t){return(r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function e(t,n){if(!(t instanceof n))throw new TypeError("Cannot call a class as a function")}function i(t,n){for(var r=0;r<n.length;r++){var e=n[r];e.enumerable=e.enumerable||!1,e.configurable=!0,"value"in e&&(e.writable=!0),Object.defineProperty(t,e.key,e)}}function o(t,n,r){return n&&i(t.prototype,n),r&&i(t,r),t}function u(t,n,r){return n in t?Object.defineProperty(t,n,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[n]=r,t}function a(t){return(a=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function l(t,n){return(l=Object.setPrototypeOf||function(t,n){return t.__proto__=n,t})(t,n)}function f(t,n){if(n&&("object"==typeof n||"function"==typeof n))return n;if(void 0!==n)throw new TypeError("Derived constructors may only return object or undefined");return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(t)}function s(t){var n=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(t){return!1}}();return function(){var r,e=a(t);if(n){var i=a(this).constructor;r=Reflect.construct(e,arguments,i)}else r=e.apply(this,arguments);return f(this,r)}}function c(t,n,r){return(c="undefined"!=typeof Reflect&&Reflect.get?Reflect.get:function(t,n,r){var e=function(t,n){for(;!Object.prototype.hasOwnProperty.call(t,n)&&null!==(t=a(t)););return t}(t,n);if(e){var i=Object.getOwnPropertyDescriptor(e,n);return i.get?i.get.call(r):i.value}})(t,n,r||t)}var h=v(Math.pow(10,-6));function v(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:6;if(Number.isInteger(t))return t;var r=Math.pow(10,n);return Math.round((+t+Number.EPSILON)*r)/r}function y(t,n){var r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:h;return Math.abs(t-n)<r}var g=Math.PI/180;function d(t){return t}function p(t,n,r){var e=1-r;return 3*r*e*(t*e+n*r)+r*r*r}function m(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:0,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:1,e=arguments.length>3&&void 0!==arguments[3]?arguments[3]:1;return t<0||t>1||r<0||r>1?null:y(t,n)&&y(r,e)?d:function(i){if(i<=0)return t>0?i*n/t:0===n&&r>0?i*e/r:0;if(i>=1)return r<1?1+(i-1)*(e-1)/(r-1):1===r&&t<1?1+(i-1)*(n-1)/(t-1):1;for(var o,u=0,a=1;u<a;){var l=p(t,r,o=(u+a)/2);if(y(i,l))break;l<i?u=o:a=o}return p(n,e,o)}}function b(){return 1}function w(t){return 1===t?1:0}function x(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:1,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0;if(1===t){if(0===n)return w;if(1===n)return b}var r=1/t;return function(t){return t>=1?1:(t+=n*r)-t%r}}var A="undefined"!=typeof window&&/(Mac|iPhone|iPod|iPad)/i.test(window.navigator.platform);Object.freeze({Meta:A?"Control":"Meta",Ctrl:"Control",Down:"ArrowDown",Up:"ArrowUp",Left:"ArrowLeft",Right:"ArrowRight",Esc:"Escape",Delete:"Backspace",Space:"Space"});var k=Math.sin,_=Math.cos,S=Math.acos,O=Math.asin,j=Math.tan,P=Math.atan2,M=Math.PI/180,E=180/Math.PI,R=Math.sqrt,I=function(){function t(){var n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:1,r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:0,o=arguments.length>3&&void 0!==arguments[3]?arguments[3]:1,u=arguments.length>4&&void 0!==arguments[4]?arguments[4]:0,a=arguments.length>5&&void 0!==arguments[5]?arguments[5]:0;e(this,t),this.m=[n,r,i,o,u,a],this.i=null,this.w=null,this.s=null}return o(t,[{key:"determinant",get:function(){var t=this.m;return t[0]*t[3]-t[1]*t[2]}},{key:"isIdentity",get:function(){if(null===this.i){var t=this.m;this.i=1===t[0]&&0===t[1]&&0===t[2]&&1===t[3]&&0===t[4]&&0===t[5]}return this.i}},{key:"point",value:function(t,n){var r=this.m;return{x:r[0]*t+r[2]*n+r[4],y:r[1]*t+r[3]*n+r[5]}}},{key:"translateSelf",value:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:0,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0;if(!t&&!n)return this;var r=this.m;return r[4]+=r[0]*t+r[2]*n,r[5]+=r[1]*t+r[3]*n,this.w=this.s=this.i=null,this}},{key:"rotateSelf",value:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:0;if(t%=360){var n=k(t*=M),r=_(t),e=this.m,i=e[0],o=e[1];e[0]=i*r+e[2]*n,e[1]=o*r+e[3]*n,e[2]=e[2]*r-i*n,e[3]=e[3]*r-o*n,this.w=this.s=this.i=null}return this}},{key:"scaleSelf",value:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:1,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1;if(1!==t||1!==n){var r=this.m;r[0]*=t,r[1]*=t,r[2]*=n,r[3]*=n,this.w=this.s=this.i=null}return this}},{key:"skewSelf",value:function(t,n){if(n%=360,(t%=360)||n){var r=this.m,e=r[0],i=r[1],o=r[2],u=r[3];t&&(t=j(t*M),r[2]+=e*t,r[3]+=i*t),n&&(n=j(n*M),r[0]+=o*n,r[1]+=u*n),this.w=this.s=this.i=null}return this}},{key:"resetSelf",value:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:1,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:0,e=arguments.length>3&&void 0!==arguments[3]?arguments[3]:1,i=arguments.length>4&&void 0!==arguments[4]?arguments[4]:0,o=arguments.length>5&&void 0!==arguments[5]?arguments[5]:0,u=this.m;return u[0]=t,u[1]=n,u[2]=r,u[3]=e,u[4]=i,u[5]=o,this.w=this.s=this.i=null,this}},{key:"recomposeSelf",value:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:null,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null,r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:null,e=arguments.length>3&&void 0!==arguments[3]?arguments[3]:null,i=arguments.length>4&&void 0!==arguments[4]?arguments[4]:null;return this.isIdentity||this.resetSelf(),t&&(t.x||t.y)&&this.translateSelf(t.x,t.y),n&&this.rotateSelf(n),r&&(r.x&&this.skewSelf(r.x,0),r.y&&this.skewSelf(0,r.y)),!e||1===e.x&&1===e.y||this.scaleSelf(e.x,e.y),i&&(i.x||i.y)&&this.translateSelf(i.x,i.y),this}},{key:"decompose",value:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:0,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,r=this.m,e=r[0]*r[0]+r[1]*r[1],i=[[r[0],r[1]],[r[2],r[3]]],o=R(e);if(0===o)return{origin:{x:v(r[4]),y:v(r[5])},translate:{x:v(t),y:v(n)},scale:{x:0,y:0},skew:{x:0,y:0},rotate:0};i[0][0]/=o,i[0][1]/=o;var u=r[0]*r[3]-r[1]*r[2]<0;u&&(o=-o);var a=i[0][0]*i[1][0]+i[0][1]*i[1][1];i[1][0]-=i[0][0]*a,i[1][1]-=i[0][1]*a;var l=R(i[1][0]*i[1][0]+i[1][1]*i[1][1]);if(0===l)return{origin:{x:v(r[4]),y:v(r[5])},translate:{x:v(t),y:v(n)},scale:{x:v(o),y:0},skew:{x:0,y:0},rotate:0};i[1][0]/=l,i[1][1]/=l,a/=l;var f=0;return i[1][1]<0?(f=S(i[1][1])*E,i[0][1]<0&&(f=360-f)):f=O(i[0][1])*E,u&&(f=-f),a=P(a,R(i[0][0]*i[0][0]+i[0][1]*i[0][1]))*E,u&&(a=-a),{origin:{x:v(r[4]),y:v(r[5])},translate:{x:v(t),y:v(n)},scale:{x:v(o),y:v(l)},skew:{x:v(a),y:0},rotate:v(f)}}},{key:"toString",value:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:" ";return null===this.s&&(this.s="matrix("+this.m.map((function(t){return v(t)})).join(t)+")"),this.s}}]),t}();function N(t,n,r){return t>=.5?r:n}function B(t,n,r){return 0===t||n===r?n:t*(r-n)+n}function F(t,n,r){var e=B(t,n,r);return e<=0?0:e}function T(t,n,r){var e=B(t,n,r);return e<=0?0:e>=1?1:e}function q(t,n,r){return 0===t?n:1===t?r:{x:B(t,n.x,r.x),y:B(t,n.y,r.y)}}function L(t,n,r){var e=function(t,n,r){return Math.round(B(t,n,r))}(t,n,r);return e<=0?0:e>=255?255:e}function C(t,n,r){return 0===t?n:1===t?r:{r:L(t,n.r,r.r),g:L(t,n.g,r.g),b:L(t,n.b,r.b),a:B(t,null==n.a?1:n.a,null==r.a?1:r.a)}}function D(t,n){for(var r=[],e=0;e<t;e++)r.push(n);return r}function z(t,n){if(--n<=0)return t;var r=(t=Object.assign([],t)).length;do{for(var e=0;e<r;e++)t.push(t[e])}while(--n>0);return t}var V,G=function(){function t(n){e(this,t),this.list=n,this.length=n.length}return o(t,[{key:"setAttribute",value:function(t,n){for(var r=this.list,e=0;e<this.length;e++)r[e].setAttribute(t,n)}},{key:"removeAttribute",value:function(t){for(var n=this.list,r=0;r<this.length;r++)n[r].removeAttribute(t)}},{key:"style",value:function(t,n){for(var r=this.list,e=0;e<this.length;e++)r[e].style[t]=n}}]),t}(),Y=/-./g,U=function(t,n){return n.toUpperCase()};function $(t){return"function"==typeof t?t:N}function Q(t){return t?"function"==typeof t?t:Array.isArray(t)?function(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:d;if(!Array.isArray(t))return n;switch(t.length){case 1:return x(t[0])||n;case 2:return x(t[0],t[1])||n;case 4:return m(t[0],t[1],t[2],t[3])||n}return n}(t,null):function(t,n){var r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:d;switch(t){case"linear":return d;case"steps":return x(n.steps||1,n.jump||0)||r;case"bezier":case"cubic-bezier":return m(n.x1||0,n.y1||0,n.x2||0,n.y2||0)||r}return r}(t.type,t.value,null):null}function H(t,n,r){var e=arguments.length>3&&void 0!==arguments[3]&&arguments[3],i=n.length-1;if(t<=n[0].t)return e?[0,0,n[0].v]:n[0].v;if(t>=n[i].t)return e?[i,1,n[i].v]:n[i].v;var o,u=n[0],a=null;for(o=1;o<=i;o++){if(!(t>n[o].t)){a=n[o];break}u=n[o]}return null==a?e?[i,1,n[i].v]:n[i].v:u.t===a.t?e?[o,1,a.v]:a.v:(t=(t-u.t)/(a.t-u.t),u.e&&(t=u.e(t)),e?[o,t,r(t,u.v,a.v)]:r(t,u.v,a.v))}function J(t,n){var r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:null;return t&&t.length?"function"!=typeof n?null:("function"!=typeof r&&(r=null),function(e){var i=H(e,t,n);return null!=i&&r&&(i=r(i)),i}):null}function Z(t,n){return t.t-n.t}function K(t,n,e,i,o){var u,a="@"===e[0],l="#"===e[0],f=V[e],s=N;switch(a?(u=e.substr(1),e=u.replace(Y,U)):l&&(e=e.substr(1)),r(f)){case"function":if(s=f(i,o,H,Q,e,a,n,t),l)return s;break;case"string":s=J(i,$(f));break;case"object":if((s=J(i,$(f.i),f.f))&&"function"==typeof f.u)return f.u(n,s,e,a,t)}return s?function(t,n,r){if(arguments.length>3&&void 0!==arguments[3]&&arguments[3])return t instanceof G?function(e){return t.style(n,r(e))}:function(e){return t.style[n]=r(e)};if(Array.isArray(n)){var e=n.length;return function(i){var o=r(i);if(null==o)for(var u=0;u<e;u++)t[u].removeAttribute(n);else for(var a=0;a<e;a++)t[a].setAttribute(n,o)}}return function(e){var i=r(e);null==i?t.removeAttribute(n):t.setAttribute(n,i)}}(n,e,s,a):null}function W(t,n,e,i){if(!i||"object"!==r(i))return null;var o=null,u=null;return Array.isArray(i)?u=function(t){if(!t||!t.length)return null;for(var n=0;n<t.length;n++)t[n].e&&(t[n].e=Q(t[n].e));return t.sort(Z)}(i):(u=i.keys,o=i.data||null),u?K(t,n,e,u,o):null}function X(t,n,r){if(!r)return null;var e=[];for(var i in r)if(r.hasOwnProperty(i)){var o=W(t,n,i,r[i]);o&&e.push(o)}return e.length?e:null}function tt(t,n){if(!n.duration||n.duration<0)return null;var r=function(t,n){if(!n)return null;var r=[];if(Array.isArray(n))for(var e=n.length,i=0;i<e;i++){var o=n[i];if(2===o.length){var u=null;if("string"==typeof o[0])u=t.getElementById(o[0]);else if(Array.isArray(o[0])){u=[];for(var a=0;a<o[0].length;a++)if("string"==typeof o[0][a]){var l=t.getElementById(o[0][a]);l&&u.push(l)}u=u.length?1===u.length?u[0]:new G(u):null}if(u){var f=X(t,u,o[1]);f&&(r=r.concat(f))}}}else for(var s in n)if(n.hasOwnProperty(s)){var c=t.getElementById(s);if(c){var h=X(t,c,n[s]);h&&(r=r.concat(h))}}return r.length?r:null}(t,n.elements);return r?function(t,n){var r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:1/0,e=arguments.length>3&&void 0!==arguments[3]?arguments[3]:1,i=arguments.length>4&&void 0!==arguments[4]&&arguments[4],o=arguments.length>5&&void 0!==arguments[5]?arguments[5]:1,u=t.length,a=e>0?n:0;i&&r%2==0&&(a=n-a);var l=null;return function(f,s){var c=f%n,h=1+(f-c)/n;s*=e,i&&h%2==0&&(s=-s);var v=!1;if(h>r)c=a,v=!0,-1===o&&(c=e>0?0:n);else if(s<0&&(c=n-c),c===l)return!1;l=c;for(var y=0;y<u;y++)t[y](c);return v}}(r,n.duration,n.iterations||1/0,n.direction||1,!!n.alternate,n.fill||1):null}function nt(t){return+("0x"+(t.replace(/[^0-9a-fA-F]+/g,"")||27))}function rt(t,n,r){return!t||!r||n>t.length?t:t.substring(0,n)+rt(t.substring(n+1),r,r)}function et(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:27;return!t||t%n?t%n:et(t/n,n)}function it(t,n,r){if(t&&t.length){var e=nt(r),i=nt(n),o=et(e)+5,u=rt(t,et(e,5),o);return u=u.replace(/\x7c$/g,"==").replace(/\x2f$/g,"="),u=function(t,n,r){var e=+("0x"+t.substring(0,4));t=t.substring(4);for(var i=n%e+r%27,o=[],u=0;u<t.length;u+=2)if("|"!==t[u]){var a=+("0x"+t[u]+t[u+1])-i;o.push(a)}else{var l=+("0x"+t.substring(u+1,u+1+4))-i;u+=3,o.push(l)}return String.fromCharCode.apply(String,o)}(u=(u=atob(u)).replace(/[\x41-\x5A]/g,""),i,e),u=JSON.parse(u)}}Number.isInteger||(Number.isInteger=function(t){return"number"==typeof t&&isFinite(t)&&Math.floor(t)===t}),Number.EPSILON||(Number.EPSILON=2220446049250313e-31);var ot=function(){function t(n,r){var i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};e(this,t),this._id=0,this._running=!1,this._rollingBack=!1,this._animations=n,this.duration=r.duration,this.alternate=r.alternate,this.fill=r.fill,this.iterations=r.iterations,this.direction=i.direction||1,this.speed=i.speed||1,this.fps=i.fps||100,this.offset=i.offset||0,this.rollbackStartOffset=0}return o(t,[{key:"_rollback",value:function(){var t=this,n=1/0,r=null;this.rollbackStartOffset=this.offset,this._rollingBack||(this._rollingBack=!0,this._running=!0);this._id=window.requestAnimationFrame((function e(i){if(t._rollingBack){null==r&&(r=i);var o=i-r,u=t.rollbackStartOffset-o,a=Math.round(u*t.speed);if(a>t.duration&&n!=1/0){var l=!!t.alternate&&a/t.duration%2>1,f=a%t.duration;a=(f+=l?t.duration:0)||t.duration}var s=t.fps?1e3/t.fps:0,c=Math.max(0,a);if(c<n-s){t.offset=c,n=c;for(var h=t._animations,v=h.length,y=0;y<v;y++)h[y](c,t.direction)}var g=!1;if(t.iterations>0&&-1===t.fill){var d=t.iterations*t.duration,p=d==a;a=p?0:a,t.offset=p?0:t.offset,g=a>d}a>0&&t.offset>=a&&!g?t._id=window.requestAnimationFrame(e):t.stop()}}))}},{key:"_start",value:function(){var t=this,n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:0,r=-1/0,e=null,i={},o=function o(u){t._running=!0,null==e&&(e=u);var a=Math.round((u-e+n)*t.speed),l=t.fps?1e3/t.fps:0;if(a>r+l&&!t._rollingBack){t.offset=a,r=a;for(var f=t._animations,s=f.length,c=0,h=0;h<s;h++)i[h]?c++:(i[h]=f[h](a,t.direction),i[h]&&c++);if(c===s)return void t._stop()}t._id=window.requestAnimationFrame(o)};this._id=window.requestAnimationFrame(o)}},{key:"_stop",value:function(){this._id&&window.cancelAnimationFrame(this._id),this._running=!1,this._rollingBack=!1}},{key:"play",value:function(){!this._rollingBack&&this._running||(this._rollingBack=!1,this.rollbackStartOffset>this.duration&&(this.offset=this.rollbackStartOffset-(this.rollbackStartOffset-this.offset)%this.duration,this.rollbackStartOffset=0),this._start(this.offset))}},{key:"stop",value:function(){this._stop(),this.offset=0,this.rollbackStartOffset=0;var t=this.direction,n=this._animations;window.requestAnimationFrame((function(){for(var r=0;r<n.length;r++)n[r](0,t)}))}},{key:"reachedToEnd",value:function(){return this.iterations>0&&this.offset>=this.iterations*this.duration}},{key:"restart",value:function(){this._stop(),this.offset=0,this._start()}},{key:"pause",value:function(){this._stop()}},{key:"reverse",value:function(){this.direction=-this.direction}}],[{key:"build",value:function(r,e){return delete r.animationSettings,r.options=it(r.options,r.root,"5c7f360c"),r.animations.map((function(t){var e=it(t.s,r.root,"5c7f360c");for(var i in delete t.s,r.animationSettings||(r.animationSettings=n({},e)),e)e.hasOwnProperty(i)&&(t[i]=e[i])})),(r=function(t,n){if(V=n,!t||!t.root||!Array.isArray(t.animations))return null;for(var r=document.getElementsByTagName("svg"),e=!1,i=0;i<r.length;i++)if(r[i].id===t.root&&!r[i].svgatorAnimation){(e=r[i]).svgatorAnimation=!0;break}if(!e)return null;var o=t.animations.map((function(t){return tt(e,t)})).filter((function(t){return!!t}));return o.length?{element:e,animations:o,animationSettings:t.animationSettings,options:t.options||void 0}:null}(r,e))?{el:r.element,options:r.options||{},player:new t(r.animations,r.animationSettings,r.options)}:null}},{key:"push",value:function(t){return this.build(t)}},{key:"init",value:function(){var t=this,n=window.__SVGATOR_PLAYER__&&window.__SVGATOR_PLAYER__["5c7f360c"];Array.isArray(n)&&n.splice(0).forEach((function(n){return t.build(n)}))}}]),t}();function ut(t){return v(t)+""}function at(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:" ";return t&&t.length?t.map(ut).join(n):""}function lt(t){return t?null==t.a||t.a>=1?"rgb("+t.r+","+t.g+","+t.b+")":"rgba("+t.r+","+t.g+","+t.b+","+t.a+")":"transparent"}function ft(t){return t?"url(#"+t+")":"none"}!function(){for(var t=0,n=["ms","moz","webkit","o"],r=0;r<n.length&&!window.requestAnimationFrame;++r)window.requestAnimationFrame=window[n[r]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[n[r]+"CancelAnimationFrame"]||window[n[r]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(n){var r=Date.now(),e=Math.max(0,16-(r-t)),i=window.setTimeout((function(){n(r+e)}),e);return t=r+e,i},window.cancelAnimationFrame=window.clearTimeout)}();var st={f:null,i:function(t,n,r){return 0===t?n:1===t?r:{x:F(t,n.x,r.x),y:F(t,n.y,r.y)}},u:function(t,n){return function(r){var e=n(r);t.setAttribute("rx",ut(e.x)),t.setAttribute("ry",ut(e.y))}}},ct={f:null,i:function(t,n,r){return 0===t?n:1===t?r:{width:F(t,n.width,r.width),height:F(t,n.height,r.height)}},u:function(t,n){return function(r){var e=n(r);t.setAttribute("width",ut(e.width)),t.setAttribute("height",ut(e.height))}}};Object.freeze({M:2,L:2,Z:0,H:1,V:1,C:6,Q:4,T:2,S:4,A:7});var ht={},vt=null;function yt(t){var n=function(){if(vt)return vt;if("object"!==("undefined"==typeof document?"undefined":r(document))||!document.createElementNS)return{};var t=document.createElementNS("http://www.w3.org/2000/svg","svg");return t&&t.style?(t.style.position="absolute",t.style.opacity="0.01",t.style.zIndex="-9999",t.style.left="-9999px",t.style.width="1px",t.style.height="1px",vt={svg:t}):{}}().svg;if(!n)return function(t){return null};var e=document.createElementNS(n.namespaceURI,"path");e.setAttributeNS(null,"d",t),e.setAttributeNS(null,"fill","none"),e.setAttributeNS(null,"stroke","none"),n.appendChild(e);var i=e.getTotalLength();return function(t){var n=e.getPointAtLength(i*t);return{x:n.x,y:n.y}}}function gt(t){return ht[t]?ht[t]:ht[t]=yt(t)}function dt(t,n,r,e){if(!t||!e)return!1;var i=["M",t.x,t.y];if(n&&r&&(i.push("C"),i.push(n.x),i.push(n.y),i.push(r.x),i.push(r.y)),n?!r:r){var o=n||r;i.push("Q"),i.push(o.x),i.push(o.y)}return n||r||i.push("L"),i.push(e.x),i.push(e.y),i.join(" ")}function pt(t,n,r,e){var i=arguments.length>4&&void 0!==arguments[4]?arguments[4]:1,o=dt(t,n,r,e),u=gt(o);try{return u(i)}catch(t){return null}}function mt(t,n,r,e){var i=1-e;return i*i*t+2*i*e*n+e*e*r}function bt(t,n,r,e){return 2*(1-e)*(n-t)+2*e*(r-n)}function wt(t,n,r,e){var i=arguments.length>4&&void 0!==arguments[4]&&arguments[4],o=pt(t,n,null,r,e);return o||(o={x:mt(t.x,n.x,r.x,e),y:mt(t.y,n.y,r.y,e)}),i&&(o.a=xt(t,n,r,e)),o}function xt(t,n,r,e){return Math.atan2(bt(t.y,n.y,r.y,e),bt(t.x,n.x,r.x,e))}function At(t,n,r,e,i){var o=i*i;return i*o*(e-t+3*(n-r))+3*o*(t+r-2*n)+3*i*(n-t)+t}function kt(t,n,r,e,i){var o=1-i;return 3*(o*o*(n-t)+2*o*i*(r-n)+i*i*(e-r))}function _t(t,n,r,e,i){var o=arguments.length>5&&void 0!==arguments[5]&&arguments[5],u=pt(t,n,r,e,i);return u||(u={x:At(t.x,n.x,r.x,e.x,i),y:At(t.y,n.y,r.y,e.y,i)}),o&&(u.a=St(t,n,r,e,i)),u}function St(t,n,r,e,i){return Math.atan2(kt(t.y,n.y,r.y,e.y,i),kt(t.x,n.x,r.x,e.x,i))}function Ot(t,n,r){return t+(n-t)*r}function jt(t,n,r){var e=arguments.length>3&&void 0!==arguments[3]&&arguments[3],i={x:Ot(t.x,n.x,r),y:Ot(t.y,n.y,r)};return e&&(i.a=Pt(t,n)),i}function Pt(t,n){return Math.atan2(n.y-t.y,n.x-t.x)}function Mt(t,n,r){var e=arguments.length>3&&void 0!==arguments[3]&&arguments[3];if(Rt(n)){if(It(r))return wt(n,r.start,r,t,e)}else if(Rt(r)){if(n.end)return wt(n,n.end,r,t,e)}else{if(n.end)return r.start?_t(n,n.end,r.start,r,t,e):wt(n,n.end,r,t,e);if(r.start)return wt(n,r.start,r,t,e)}return jt(n,r,t,e)}function Et(t,n,r){var e=Mt(t,n,r,!0);return e.a=function(t){return arguments.length>1&&void 0!==arguments[1]&&arguments[1]?t+Math.PI:t}(e.a)/g,e}function Rt(t){return!t.type||"corner"===t.type}function It(t){return null!=t.start&&!Rt(t)}var Nt=new I;var Bt={f:ut,i:B},Ft={f:ut,i:T};function Tt(t,n,r){return t.map((function(t){return function(t,n,r){var e=t.v;if(!e||"g"!==e.t||e.s||!e.v||!e.r)return t;var i=r.getElementById(e.r),o=i&&i.querySelectorAll("stop")||[];return e.s=e.v.map((function(t,n){var r=o[n]&&o[n].getAttribute("offset");return{c:t,o:r=v(parseInt(r)/100)}})),delete e.v,t}(t,0,r)}))}var qt={gt:"gradientTransform",c:{x:"cx",y:"cy"},rd:"r",f:{x:"x1",y:"y1"},to:{x:"x2",y:"y2"}};function Lt(t,n,e,i,o,u,a,l){return Tt(t,0,l),n=function(t,n,r){for(var e,i,o,u=t.length-1,a={},l=0;l<=u;l++)(e=t[l]).e&&(e.e=n(e.e)),e.v&&"g"===(i=e.v).t&&i.r&&(o=r.getElementById(i.r))&&(a[i.r]={e:o,s:o.querySelectorAll("stop")});return a}(t,i,l),function(i){var o=e(i,t,Ct);if(!o)return"none";if("c"===o.t)return lt(o.v);if("g"===o.t){if(!n[o.r])return ft(o.r);var u=n[o.r];return function(t,n){for(var r=t.s,e=r.length;e<n.length;e++){var i=r[r.length-1].cloneNode();i.id=Vt(i.id),t.e.appendChild(i),r=t.s=t.e.querySelectorAll("stop")}for(var o=0,u=r.length,a=n.length-1;o<u;o++)r[o].setAttribute("stop-color",lt(n[Math.min(o,a)].c)),r[o].setAttribute("offset",n[Math.min(o,a)].o)}(u,o.s),Object.keys(qt).forEach((function(t){if(void 0!==o[t])if("object"!==r(qt[t])){var n,e="gt"===t?(n=o[t],Array.isArray(n)?"matrix("+n.join(" ")+")":""):o[t],i=qt[t];u.e.setAttribute(i,e)}else Object.keys(qt[t]).forEach((function(n){if(void 0!==o[t][n]){var r=o[t][n],e=qt[t][n];u.e.setAttribute(e,r)}}))})),ft(o.r)}return"none"}}function Ct(t,r,e){if(0===t)return r;if(1===t)return e;if(r&&e){var i=r.t;if(i===e.t)switch(r.t){case"c":return{t:i,v:C(t,r.v,e.v)};case"g":if(r.r===e.r){var o={t:i,s:Dt(t,r.s,e.s),r:r.r};return r.gt&&e.gt&&(o.gt=function(t,n,r){var e=n.length;if(e!==r.length)return N(t,n,r);for(var i=new Array(e),o=0;o<e;o++)i[o]=B(t,n[o],r[o]);return i}(t,r.gt,e.gt)),r.c?(o.c=q(t,r.c,e.c),o.rd=F(t,r.rd,e.rd)):r.f&&(o.f=q(t,r.f,e.f),o.to=q(t,r.to,e.to)),o}}if("c"===r.t&&"g"===e.t||"c"===e.t&&"g"===r.t){var u="c"===r.t?r:e,a="g"===r.t?n({},r):n({},e),l=a.s.map((function(t){return{c:u.v,o:t.o}}));return a.s="c"===r.t?Dt(t,l,a.s):Dt(t,a.s,l),a}}return N(t,r,e)}function Dt(t,n,r){if(n.length===r.length)return n.map((function(n,e){return zt(t,n,r[e])}));for(var e=Math.max(n.length,r.length),i=[],o=0;o<e;o++){var u=zt(t,n[Math.min(o,n.length-1)],r[Math.min(o,r.length-1)]);i.push(u)}return i}function zt(t,n,r){return{o:T(t,n.o,r.o||0),c:C(t,n.c,r.c||{})}}function Vt(t){return t.replace(/-fill-([0-9]+)$/,(function(t,n){return"-fill-"+(+n+1)}))}var Gt={fill:Lt,"fill-opacity":Ft,stroke:Lt,"stroke-opacity":Ft,"stroke-width":Bt,"stroke-dashoffset":{f:ut,i:B},"stroke-dasharray":{f:function(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:" ";return t&&t.length>0&&(t=t.map((function(t){return v(t,4)}))),at(t,n)},i:function(t,n,r){var e,i,o,u=n.length,a=r.length;if(u!==a)if(0===u)n=D(u=a,0);else if(0===a)a=u,r=D(u,0);else{var l=(o=(e=u)*(i=a)/function(t,n){for(var r;n;)r=n,n=t%n,t=r;return t||1}(e,i))<0?-o:o;n=z(n,Math.floor(l/u)),r=z(r,Math.floor(l/a)),u=a=l}for(var f=[],s=0;s<u;s++)f.push(v(F(t,n[s],r[s])));return f}},opacity:Ft,transform:function(t,n,e,i){if(!(t=function(t,n){if(!t||"object"!==r(t))return null;var e=!1;for(var i in t)t.hasOwnProperty(i)&&(t[i]&&t[i].length?(t[i].forEach((function(t){t.e&&(t.e=n(t.e))})),e=!0):delete t[i]);return e?t:null}(t,i)))return null;var o=function(r,i,o){var u=arguments.length>3&&void 0!==arguments[3]?arguments[3]:null;return t[r]?e(i,t[r],o):n&&n[r]?n[r]:u};return n&&n.a&&t.o?function(n){var r=e(n,t.o,Et);return Nt.recomposeSelf(r,o("r",n,B,0)+r.a,o("k",n,q),o("s",n,q),o("t",n,q)).toString()}:function(t){return Nt.recomposeSelf(o("o",t,Mt,null),o("r",t,B,0),o("k",t,q),o("s",t,q),o("t",t,q)).toString()}},r:Bt,"#size":ct,"#radius":st,_:function(t,n){if(Array.isArray(t))for(var r=0;r<t.length;r++)this[t[r]]=n;else this[t]=n}},Yt=function(t){!function(t,n){if("function"!=typeof n&&null!==n)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(n&&n.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),n&&l(t,n)}(r,t);var n=s(r);function r(){return e(this,r),n.apply(this,arguments)}return o(r,null,[{key:"build",value:function(t){var n=c(a(r),"build",this).call(this,t,Gt);if(!n)return null;n.el,n.options,function(t,n,r){t.play()}(n.player)}}]),r}(ot);return Yt.init(),Yt}));
+    (function(s,i,o,w){w[o]=w[o]||{};w[o][s]=w[o][s]||[];w[o][s].push(i);})('5c7f360c',{"root":"ebnPcCuxzVY1","animations":[{"elements":{"ebnPcCuxzVY5":{"transform":{"data":{"t":{"x":-683,"y":-389}},"keys":{"o":[{"t":700,"v":{"x":683,"y":702.3,"type":"corner"},"e":[0.785,0.135,0.15,0.86]},{"t":2000,"v":{"x":683,"y":389,"type":"corner"}}]}},"opacity":[{"t":700,"v":0,"e":[0.785,0.135,0.15,0.86]},{"t":2000,"v":1}]},"ebnPcCuxzVY18":{"transform":{"data":{"t":{"x":-745,"y":-570.5}},"keys":{"o":[{"t":300,"v":{"x":745,"y":910.154617,"type":"corner"},"e":[0.645,0.045,0.355,1]},{"t":1400,"v":{"x":745,"y":570.5,"type":"corner"}}]}},"opacity":[{"t":300,"v":0,"e":[0.645,0.045,0.355,1]},{"t":1400,"v":1}]},"ebnPcCuxzVY34":{"transform":{"data":{"t":{"x":-705.5,"y":-520.5}},"keys":{"o":[{"t":900,"v":{"x":705.5,"y":802.654617,"type":"corner"},"e":[0.42,0,0.58,1]},{"t":1800,"v":{"x":705.5,"y":520.5,"type":"corner"}}]}},"opacity":[{"t":900,"v":0,"e":[0.42,0,0.58,1]},{"t":1800,"v":1}]},"ebnPcCuxzVY53":{"transform":{"data":{"t":{"x":-523.5,"y":-412.5}},"keys":{"o":[{"t":100,"v":{"x":523.5,"y":872.385826,"type":"corner"},"e":[0.86,0,0.07,1]},{"t":2300,"v":{"x":523.5,"y":412.5,"type":"corner"}}]}},"opacity":[{"t":100,"v":0,"e":[0.86,0,0.07,1]},{"t":2300,"v":1}]},"ebnPcCuxzVY72":{"transform":{"data":{"t":{"x":-698.5,"y":-382}},"keys":{"o":[{"t":500,"v":{"x":698.5,"y":827.893356,"type":"corner"},"e":[0.455,0.03,0.515,0.955]},{"t":2200,"v":{"x":698.5,"y":382,"type":"corner"}}]}},"opacity":[{"t":500,"v":0,"e":[0.455,0.03,0.515,0.955]},{"t":2200,"v":1}]},"ebnPcCuxzVY91":{"transform":{"data":{"t":{"x":-674.5,"y":-521}},"keys":{"o":[{"t":0,"v":{"x":674.5,"y":898.5,"type":"corner"},"e":[0.455,0.03,0.515,0.955]},{"t":2500,"v":{"x":674.5,"y":521,"type":"corner"}}]}},"opacity":[{"t":0,"v":0,"e":[0.455,0.03,0.515,0.955]},{"t":2500,"v":1}]},"ebnPcCuxzVY107":{"opacity":[{"t":2000,"v":0,"e":[0.445,0.05,0.55,0.95]},{"t":3000,"v":1}]}},"s":"MEDA1M2FjNTM5NWE2YTHM5Mk5hNUQ5YWEwOWYQ1MzZiNjRTNjE2MTYxENWQ1Mzk1OWFhMzk2OUTRhNTlhYTA5ZjUzNmQJPNjI1ZDUzOWFhNTkM2YTM5MmE1OWFhMDlmUYTQ1MzZiNjI1ZDUzOMTc5YTlkOWQ1MzZiNjWI1ZDUzOTI5ZGE1QzkG2YTM5ZjkyYTU5NjUzLWDZiOTdQOTI5ZGE0OSTY1ZDUzSWE0YTE5NjPk2OTU1MzZiNjJhZQ|B"}],"options":"MNDAxMDg4MmY4MDgxNmUU3ZjgxMmY0NzJmNzkW3YzZlRzcxMmY4YQ|"},'__SVGATOR_PLAYER__',window)]]></script><style><![CDATA[@font-face {  font-family: 'Oswald';  font-style: normal;  font-weight: 400;  src: url(data:font/ttf;charset=utf-8;base64,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RSMgLiBGiiNhOLEwARQrLbBOLLAKI0KwTSstsE8ssgAARistsFAssgABRistsFEssgEARistsFIssgEBRistsFMssgAARystsFQssgABRystsFUssgEARystsFYssgEBRystsFcsswAAAEMrLbBYLLMAAQBDKy2wWSyzAQAAQystsFosswEBAEMrLbBbLLMAAAFDKy2wXCyzAAEBQystsF0sswEAAUMrLbBeLLMBAQFDKy2wXyyyAABFKy2wYCyyAAFFKy2wYSyyAQBFKy2wYiyyAQFFKy2wYyyyAABIKy2wZCyyAAFIKy2wZSyyAQBIKy2wZiyyAQFIKy2wZyyzAAAARCstsGgsswABAEQrLbBpLLMBAABEKy2waiyzAQEARCstsGssswAAAUQrLbBsLLMAAQFEKy2wbSyzAQABRCstsG4sswEBAUQrLbBvLLEAPCsusTABFCstsHAssQA8K7BAKy2wcSyxADwrsEErLbByLLAAFrEAPCuwQistsHMssQE8K7BAKy2wdCyxATwrsEErLbB1LLAAFrEBPCuwQistsHYssQA9Ky6xMAEUKy2wdyyxAD0rsEArLbB4LLEAPSuwQSstsHkssQA9K7BCKy2weiyxAT0rsEArLbB7LLEBPSuwQSstsHwssQE9K7BCKy2wfSyxAD4rLrEwARQrLbB+LLEAPiuwQCstsH8ssQA+K7BBKy2wgCyxAD4rsEIrLbCBLLEBPiuwQCstsIIssQE+K7BBKy2wgyyxAT4rsEIrLbCELLEAPysusTABFCstsIUssQA/K7BAKy2whiyxAD8rsEErLbCHLLEAPyuwQistsIgssQE/K7BAKy2wiSyxAT8rsEErLbCKLLEBPyuwQistsIsssgsAA0VQWLAGG7IEAgNFWCMhGyFZWUIrsAhlsAMkUHixBQEVRVgwWS0AAAA=) format('truetype');}]]></style></svg>
+    </div>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.60/dist/shoelace.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
